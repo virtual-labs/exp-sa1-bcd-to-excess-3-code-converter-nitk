@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Minimum number of AND, OR and NOT gates required in a 4- bit BCD to Excess-3 converter circuit is _____________.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "4,4,3",
+        "b": "5,5,4",
+        "c": "5,2,2",
+        "d": "4,5,3"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Stuck-at-1-fault (SAF) occurs when",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A line is permanently stuck to ground.",
+        "b": "A line is permanently stuck to Vdd.",
+        "c": "A line is permanently stuck to another line.",
+        "d": "All of the above."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The output ‘Y’ of the following AND gate when B is 0 and 1 are respectively <img src='images/Pre_Q3.jpeg' >",
+      "answers": {
+        "a": "0,1",
+        "b": "1,1",
+        "c": "1,0",
+        "d": "0,0"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The BCD code of a number is 0111 0001 1000. The Excess-3 code of this number is (assuming no stuck at faults) are",
+      "answers": {
+        "a": "1010 0010 1011",
+        "b": "1010 0100 1011",
+        "c": "1011 0110 1100",
+        "d": "1001 0110 1100"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "The advantage of Excess-3 code over BCD code is that",
+      "answers": {
+        "a": "Excess 3 code occupies lesser memory.",
+        "b": "Excess 3 code is a self-complementing code.",
+        "c": "Both of the above.",
+        "d": "None of the above."
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
