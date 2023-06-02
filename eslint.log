@@ -1,0 +1,61 @@
+
+/home/runner/work/exp-sa1-bcd-to-excess-3-code-converter-nitk/exp-sa1-bcd-to-excess-3-code-converter-nitk/experiment/simulation/js/binary.js
+   1:10  warning  'checkmyinput' is defined but never used   no-unused-vars
+  18:10  warning  'checkmyinputB' is defined but never used  no-unused-vars
+  35:10  warning  'checkmyinputZ' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-sa1-bcd-to-excess-3-code-converter-nitk/exp-sa1-bcd-to-excess-3-code-converter-nitk/experiment/simulation/js/jquery-3.4.1.slim.min.js
+  2:71     warning  'module' is not defined                                                    no-undef
+  2:86     warning  'module' is not defined                                                    no-undef
+  2:5637   warning  Unexpected control character(s) in regular expression: \x1f, \x1f          no-control-regex
+  2:6120   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:6374   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:6818   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:7608   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:9701   warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:10011  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:11812  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:12387  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:12425  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:13438  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:13750  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15578  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:15849  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:16047  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:16421  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  2:17111  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:18931  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19031  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19091  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:19275  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:20444  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21718  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:21829  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:23995  warning  Unnecessary escape character: \/                                           no-useless-escape
+  2:33599  warning  Empty block statement                                                      no-empty
+  2:37045  warning  Unnecessary escape character: \/                                           no-useless-escape
+  2:38266  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:38382  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:39010  warning  Empty block statement                                                      no-empty
+  2:46503  warning  Unnecessary escape character: \/                                           no-useless-escape
+  2:48809  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:50369  warning  Empty block statement                                                      no-empty
+  2:57946  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:59689  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:59755  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:60059  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:60125  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:60532  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:60809  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:66853  warning  Expected a conditional expression and instead saw an assignment            no-cond-assign
+  2:70557  warning  'define' is not defined                                                    no-undef
+  2:70569  warning  'define' is not defined                                                    no-undef
+
+/home/runner/work/exp-sa1-bcd-to-excess-3-code-converter-nitk/exp-sa1-bcd-to-excess-3-code-converter-nitk/experiment/simulation/js/main.js
+     3:10  warning  'AddData' is defined but never used    no-unused-vars
+  1373:10  warning  'clearForm' is defined but never used  no-unused-vars
+  1379:10  warning  'pr' is defined but never used         no-unused-vars
+  1382:10  warning  'dropdown' is defined but never used   no-unused-vars
+
+✖ 52 problems (0 errors, 52 warnings)
+
