@@ -1,181 +1,222 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="EMF Generation">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <title>Detection of Stuck at 1 fault on BCD-to excess-3 code converter</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="graph.ob.js"></script>
-  <script src="graph_line_use.ob.js"></script>
-</head>
-<body>
-<div class="dropdown">
-<button onclick="dropdown()" class="dropbtn" style="font-weight:bold;">INSTRUCTIONS</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home"><b>1) Enter the Boolean input "A", "B", "C" and "D.</b><br/><br/>
-                    <b>2) Enter the Fault Position Number(FPN) of the input or output wire to be declared at stuck at 1 for your corresponding inputs.</b><br/><br/>
-                    <b>3) In case of multiple Fault positions(FPNs), add the FPN's seperating each FPN with a comma and without spaces. For example: (2,5,3,....).</b><br/><br/>
-                    <b>4) Click on "Click for SA1 TT" Button to print your output values.</b><br/><br/>
-                    <b>5) Click "Print" if you want to get print out of Truth Table.</b><br/><br/>
-    </a>
-  </div>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE</title>
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js" 
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src='https://cdn.plot.ly/plotly-2.12.1.min.js'></script>
+    <title>Virtual Lab</title>
+    <script src='https://cdn.plot.ly/plotly-2.18.2.min.js'></script>
 
-<div id="wrapper" class="simscreen" style=" border: 2px solid #3385ff; ">
- <div class="title" style=" font-size:16px;background-color: #3385ff; width:300px; height:50px; font-weight: bold;">
-   <p style="text-align:center; color:white"> <b>Detect the fault for each output function.</b></p>
- </div>
+  </head>
+  <body>
+    <div class="container">
+    <div class="title-div-container">
+      <div class="title-div">
+          <div class="logo-div">
+            <a href="#"><img src="images/logo_nitk.png" alt="Logo" class="logo" /></a>
+          </div>
+          <h1>Detection of SA1 faults on selected I/O wires of a VLSI circuit for BCD-to-excess-3 code converter
+          </h1>
+        </div>
+      </div>
+      <div class="sidebar">
+        <ul class="tool-menu">
 
-<div class="input-img">
-  <table width="0%" border="0">
-    <tr>
-      <td>
-         <input type = "text" style="width:100px; font-size:15pt; overflow:hidden;" size="5" min="0" maxlength="1" name="myinputD" onkeyup="checkmyinputB()" id="D"/></input></td>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
+          
+          <li class="tool-list tool-practice" onclick="displayDiv(this)">
+            <a class="tool-link" title="Experiment"
+              ><img src="./images/solution.png" alt="solution" class="icons"
+              ></a
+              >
+              <span>Simulation</span>
+          </li>
+
+          <li class="tool-list tool-help" onclick="displayDiv(this)">
+            <a class="tool-link" title="Help" onclick="help()"
+              ><img src="./images/help1.png" alt="Help" class="icons"
+              ></a
+              >
+              <span>Instructions</span>
+          </li>
+       
+
+          <li class="tool-list tool-practice" onclick="window.print()">
+            <a class="tool-link" title="Print"
+              ><img src="./images/print1.png" alt="solution" class="icons"
+              ></a
+              >
+              <span>Print</span>
+          </li>
 
 
-       <tr>
-      <td>
-         <input type = "text" style="width:100px; font-size:15pt; overflow:hidden;" size="5" min="0" maxlength="1" name="myinputC" onkeyup="checkmyinput()" id="C"/></input></td>
-       </tr>
-       <tr>
-       </tr>
-<tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr>
-       <td>
-         <input type = "text" style="width:100px; font-size:15pt; overflow:hidden;" size="5" min="0" maxlength="1" name="myinputB" onkeyup="checkmyinputB()" id="B"/></input></td>
-       </tr>
+          <li class="tool-list tool-help" onclick="displayDiv(this)">
+            <a class="tool-link" title="Help" onclick="Refresh()"
+              ><img src="./images/bluecwdull.svg" alt="Help" class="icons"
+              ></a
+              >
+              <span>Reset</span>
+          </li>
+          
+        </ul>
+      </div> 
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title">Simulation</h3>
+           
+            <div class="canvas__div">
+              <div class="task-screen apparatus hide">
+              </div>
+              <div class="task-screen practice">
+                  <span id="Rfvalue" style="display:none ;"></span>
+                  <div class="grid-container">
+                    <div class="div1">
+                      <!-- Input fields -->
+                      <table style="border: 0;">
+                        <tr>
+                          <td>
+                            <input 
+                              type="text" 
+                              class="my-input my-inputD" 
+                              style="font-size:15pt; overflow:hidden;" 
+                              maxlength="1" 
+                              name="myinputD" oninput="allowOnlyNumeric(event)" 
+                              onkeyup="checkmyinputB()" 
+                              id="D" 
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input 
+                              type="text" 
+                              class="my-input my-inputC" 
+                              style="font-size:15pt; overflow:hidden;" 
+                              maxlength="1" 
+                              name="myinputC" oninput="allowOnlyNumeric(event)" 
+                              onkeyup="checkmyinput()" 
+                              id="C" 
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input 
+                              type="text" 
+                              class="my-input my-inputB" 
+                              style="font-size:15pt; overflow:hidden;" 
+                              maxlength="1" 
+                              name="myinputB" 
+                              onkeyup="checkmyinputB()" 
+                              id="B" 
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input  
+                              type="text" 
+                              class="my-input my-inputA" 
+                              style="font-size:15pt; overflow:hidden;" 
+                              maxlength="1" 
+                              name="myinputA" 
+                              onkeyup="checkmyinput()" 
+                              id="A" 
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                    
+                      <!-- Image -->
+                      <img id="circuit" src="images/image.png" alt="Image of Circuit">
+                    </div>
+                    
+                  <div class="div2">
 
-       <tr>
-       </tr>
-<tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr>
-       <tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr><tr>
-       </tr>
-       <tr>
-      <td>
-         <input type = "text" style="width:100px; font-size:15pt; overflow:hidden;" size="5" min="0" maxlength="1" name="myinputA" onkeyup="checkmyinput()" id="A"/></input></td>
-       </tr>
-     </table>
-     <img src="images/image.png"  width="550" height="300"/>
-   </div>
+                    <div class="fault-pos">
+                      <table class="fault-table" width="0%" border="1">
+                        <tr>
+                          <td class="faultpos">
+                            Fault Positions
+                          </td>
+                          <td>
+                             <input class="fault-input" type = "text"  size="50" min="1" maxlength="19" name="myinputS" id="S"/></input></td>
+                           </tr>
+                            <tr>
+                           <td colspan="2" style="text-align:center;"><input class="runBtn" id = "button" type = "button" value = "RUN" onclick="AddData()"></td>
+                           </tr>
+                    
+                     </table>
+                    </div>
+                  </div>
+                  </div>
+        <div class="simulator-table container1">
+       
+          <div id="table" class="result-table">
+            <table id="mytable"  border="1">
+              <tr class="tr-table">
+                <th class="heading" colspan="10">TRUTH TABLE</th>
+                <!-- <th class="heading" colspan="5"></th> -->
+             </tr>
+             <tr>
+                  <th >Serial No.</th>
+                  <th >A</th>
+                  <th >B</th>
+                  <th >C</th>
+                  <th >D</th>
+                  <th  id="W">W</th>
+                  <th id="X">X</th>
+                  <th  id="Y">Y</th>
+                  <th  id="Z">Z</th>
+                  <th>SA1</th>
+              </tr>
+            </table>
+          </div>
+        </div>
 
-   <div id="table" class="result-table" style=" overflow-y: auto; width:90%; height:300px; ">
-     <table id="mytable"  border="1" style="width:100%; text-align:center;">
-       <tr style="font-size:16px; background-color: #3385ff; font-weight: bold; color:white">
-         <th colspan="5">TRUTH TABLE</th>
-         <th colspan="5"><input style=" background-color: #4CAF50; color:#fff; font-weight: bold; padding:5px 10px; border:none; cursor:pointer;" id = "pr" type = "button" value = "PRINT" onclick="print()"></input></th>
-      </tr>
-      <tr>
-           <th >Serial No.</th>
-           <th >A</th>
-           <th >B</th>
-           <th >C</th>
-           <th >D</th>
-           <th  id="W">W</th>
-           <th id="X">X</th>
-           <th  id="Y">Y</th>
-           <th  id="Z">Z</th>
-           <th>SA1</th>
-       </tr>
-     </table>
-   </div>
+        <div id="instructions" style="display: none;">
+          <div class="icontent">
+              <h2 id="instruct">Instructions</h2>
+              <ol>
+                  <li>Enter the Boolean input "A", "B", "C" and "D.</li>
+                  <li>Enter the Fault Position Number(FPN) of the input or output wire to be declared at stuck at 1 for your corresponding inputs.</li>
+                  <li>In case of multiple Fault positions(FPNs), add the FPN's seperating each FPN with a comma and without spaces. For example: (2,5,3,....).</li>
+                  <li> Click on "Click for SA1 TT" Button to print your output values.</li>
+                  <li>Click "Print" if you want to get print out of Truth Table.</li>
+          </div>
+      </div>
+        
+        </div>
+          </div>
+          </div>
+         
+        </div>
 
-<div class="fault-pos">
-  <table width="0%" border="1">
-    <tr>
-      <td style=" background-color: #3385ff; padding:5px; color:#fff;">
-        Fault Positions
-      </td>
-      <td>
-         <input type = "text" style="width:100px; font-size:15pt; overflow:hidden; align-content: center;" size="50" min="1" maxlength="19" name="myinputS" id="S"/></input></td>
-       </tr>
-        <tr>
-       <td colspan="2" style="text-align:center;"><input style=" border:none; cursor: pointer; font-weight: bold; background-color: #4CAF50; height:30px; width:105px ; color:#fff;" id = "button" type = "button" value = "RUN" onclick="AddData()"></td>
-       </tr>
-
- </table>
-
-  <button style=" border:none; cursor: pointer; font-weight: bold;  background-color: #4CAF50; height:50px; width:100px;  color:#fff;"  type="reset" value="Clear"  onclick="clearForm()">RESET</button>
-</div>
-
-</div>
-<script  src="js/main.js"></script>
-<script  src="ja/binary.js"></script>
-</body>
+         
+          <div class="main__task-div footer">
+            <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+          </div>
+       
+    </div>
+    <script defer src="js/script.js"></script>
+  </body>
 </html>
