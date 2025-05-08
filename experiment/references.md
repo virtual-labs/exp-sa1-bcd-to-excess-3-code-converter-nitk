@@ -8,12 +8,12 @@
     1. Digital Systems: Principles and Applications, Ronald Tocci, Neal Widmer, Greg Moss , Pearson Education, 12th Edn.</br></br>
     2. Digital Design with an Introduction to the Verilog HDL, VHDL, and System Verilog, M. Morris Mano and Michael D. Ciletti, Pearson Education, 6th Edn.</br></br>
     3. Essential of Electronics Testing for Digital Memory and Mixed Signal VLSI Circuits, Michael L. Bushnell, Springer.</br></br>
-    <td>Developers :</br>
+   <!--   <td>Developers :</br>
         <ul style="list-style-type: none;">
           <li>Dr. Biswajit R Bhowmik | NITK</li>
           <li>Prof. K V Gangadharan | NITK</li>
         </ul>
-<!--     Contributors :
+   Contributors :
     <ul style="list-style-type: none;">
       <li>Anusha B Salian | NITK</li>
       <li>Prajna K | NITK</li>
