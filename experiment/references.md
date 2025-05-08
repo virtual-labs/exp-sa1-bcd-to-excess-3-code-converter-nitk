@@ -1,7 +1,7 @@
 <table style="text-align: justify;">
 <tr style="background-color: transparent;">
   <th>References</th>
-    <th>Contributors list</th>
+<!--     <th>Contributors list</th> -->
   </tr>
   <tr style="background-color: transparent;">
   <td>
