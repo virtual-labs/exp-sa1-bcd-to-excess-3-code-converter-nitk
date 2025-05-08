@@ -13,11 +13,12 @@
           <li>Dr. Biswajit R Bhowmik | NITK</li>
           <li>Prof. K V Gangadharan | NITK</li>
         </ul>
-    Contributors :
+<!--     Contributors :
     <ul style="list-style-type: none;">
       <li>Anusha B Salian | NITK</li>
       <li>Prajna K | NITK</li>
       <li>Akshaya | NITK</li>
-    </ul></td>
+    </ul> -->
+</td>
   </tr>
 </table>
