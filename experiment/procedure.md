@@ -1,4 +1,5 @@
 ### Procedure
+
 1. Enter the Boolean input "A", "B", "C" and "D".
 
 2. Enter the Fault Position Number (FPN) of the input or output wire to be declared at stuck at 1 for your corresponding inputs.

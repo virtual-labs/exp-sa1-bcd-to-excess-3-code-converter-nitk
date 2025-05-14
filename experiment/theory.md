@@ -1,8 +1,8 @@
-### Theory
+### Introduction
 
 ### Binary Coded Decimal (BCD)
 
-BCD stands for Binary Coded Decimal. It is a method to convert decimal numbers to a binary form. In this representation, each digit in the decimal number system is represented by a fixed number of bits (usually four or eight). It is weighted in the form of 8-4-2-1. Assuming four bit representation, the BCD code for each digit as shown in Table 1.
+<p style="text-align:justify;">BCD stands for Binary Coded Decimal. It is a method to convert decimal numbers to a binary form. In this representation, each digit in the decimal number system is represented by a fixed number of bits (usually four or eight). It is weighted in the form of 8-4-2-1. Assuming four bit representation, the BCD code for each digit as shown in Table 1.</p>
 
 <center>
 <table class="center" >
@@ -93,7 +93,7 @@ BCD stands for Binary Coded Decimal. It is a method to convert decimal numbers t
 
 ### Excess-3 code (XS-3)
 
-The main advantage of the BCD system over regular binary code is that it is fast and efficient, as it is easier to encode and decode decimal values to BCD code. However, it occupies more memory as compared to binary code. The excess-3 code (XS-3) is a non-weighted code, used to represent decimal systems in binary forms. It is obtained by adding 011 (3) to each value in the BCD system. Assuming four-bit representation, the XS-3 code for each digit is shown in Table 2.
+<p style="text-align:justify;">The main advantage of the BCD system over regular binary code is that it is fast and efficient, as it is easier to encode and decode decimal values to BCD code. However, it occupies more memory as compared to binary code. The excess-3 code (XS-3) is a non-weighted code, used to represent decimal systems in binary forms. It is obtained by adding 011 (3) to each value in the BCD system. Assuming four-bit representation, the XS-3 code for each digit is shown in Table 2.</p>
 
 <center>
  <table style = "align-content: center; width:  100%;">
@@ -193,28 +193,28 @@ The main advantage of the BCD system over regular binary code is that it is fast
 </table>
 
 </center>
-<center>Table 2 : Decimal to XS-3 conversion</center></br>
+<center>Table 2 : Decimal to XS-3 conversion</center>
 
-The most significant advantage of XS-3 code is that it is self-complementary i.e. the corresponding 9's complement in the decimal system can be obtained by interchanging the 0’s and 1's in the XS-3 code. This makes it easier to overcome the shortcomings encountered during arithmetic operations.
+<p style="text-align:justify;">The most significant advantage of XS-3 code is that it is self-complementary i.e. the corresponding 9's complement in the decimal system can be obtained by interchanging the 0’s and 1's in the XS-3 code. This makes it easier to overcome the shortcomings encountered during arithmetic operations.</p>
 
 ### Stuck At Faults
 
-A stuck-at fault (SAF) is a logic-level fault. Stuck at faults occur when a line is permanently stuck to Vdd or ground giving a faulty output. This line may be an input or output to any gate. Also this fault can be single or multiple stuck at faults.
+<p style="text-align:justify;">A stuck-at fault (SAF) is a logic-level fault. Stuck at faults occur when a line is permanently stuck to Vdd or ground giving a faulty output. This line may be an input or output to any gate. Also this fault can be single or multiple stuck at faults.</p>
 There are two kinds of SAF:
 
 1.   Stuck at 0
 2.   Stuck at 1
 
-When a signal, or gate output, is stuck at a 0 or 1 value, independent of the inputs to the circuit, the signal is said to be "stuck at" and the fault model used to describe this type error is called a "stuck at fault model".
+<p style="text-align:justify;">When a signal, or gate output, is stuck at a 0 or 1 value, independent of the inputs to the circuit, the signal is said to be "stuck at" and the fault model used to describe this type error is called a "stuck at fault model".</p>
 
-A circuit with n lines can have 3n-1 possible stuck line combinations; each line can be: S-A-1, S-A-0, or fault-free.
+<p style="text-align:justify;">A circuit with n lines can have 3n-1 possible stuck line combinations; each line can be: S-A-1, S-A-0, or fault-free.</p>
 
 <center><img src="images/stuck.png" ></center>
 <center>Figure 1: Examples of Stuck At 1 faults for XOR gate:</center>
 
 ### BCD to Excess-3
 
-A BCD digit can be converted to it's corresponding Excess-3 code by simply adding 3 to it. Let A, B, C and D be the input bits and W, X, Y and Z be the output bits. Then the truth table for the conversion from BCD to Excess-3 is shown in Table 3.
+<p style="text-align:justify;">A BCD digit can be converted to it's corresponding Excess-3 code by simply adding 3 to it. Let A, B, C and D be the input bits and W, X, Y and Z be the output bits. Then the truth table for the conversion from BCD to Excess-3 is shown in Table 3.</p>
 
 <center>
  <table text-align="center" width="250">
@@ -388,19 +388,19 @@ A BCD digit can be converted to it's corresponding Excess-3 code by simply addin
 </center>
 <center>Table 3 : BCD to Excess-3 Code conversion</center></br>
 
-From the truth table above, we draw the K-Maps for each of the output variables W, X, Y and Z.
+<p style="text-align:justify;">From the truth table above, we draw the K-Maps for each of the output variables W, X, Y and Z.</p>
 
-<center><img src="images/kmp.png" ></center></br>
+<center><img src="images/kmp.png" width="60%"></center></br>
 
-The minimized expressions for the outputs are:
+<p style="text-align:justify;">The minimized expressions for the outputs are:</p>
 
-W=A+BC+BD
+<p style="text-align:justify;">W=A+BC+BD</p>
 
-X= ~ BC + ~ BD + B~ C~ D
+<p style="text-align:justify;">X= ~ BC + ~ BD + B~ C~ D</p>
 
-Y=CD+ ~ C ~ D
+<p style="text-align:justify;">Y=CD+ ~ C ~ D</p>
 
-Z= ~D
+<p style="text-align:justify;">Z= ~D</p>
 
-<center><img src="images/bcd-excess3.png" ></center>
-<center>Figure 2: Logic diagram for BCD-to-excess-3 code converter</center></br></br>
+<center><img src="images/bcd-excess3.png" width="50%"></center>
+<center>Figure 2: Logic diagram for BCD-to-excess-3 code converter</center>
