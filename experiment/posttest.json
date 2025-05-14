@@ -10,7 +10,7 @@
         "d": "4,5,3"
       },
       "explanations": {
-        "a": "",
+        "a": "The minimized logic implementation of a 4-bit BCD to Excess-3 converter typically requires 4 AND gates, 4 OR gates, and 3 NOT gates.",
         "b": "",
         "c": "",
         "d": ""
@@ -28,7 +28,7 @@
       },
       "explanations": {
         "a": "",
-        "b": "",
+        "b": "A stuck-at-1 fault means the line is always at logic high (1), which corresponds to being permanently connected to Vdd.",
         "c": "",
         "d": ""
       },
@@ -36,37 +36,37 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "The output ‘Y’ of the following AND gate when B is 0 and 1 are respectively <img src='images/Pre_Q3.jpeg' >",
+      "question": "The output ‘Y’ of the following AND gate when B is 0 and 1 are respectively" <img src='images/Pre_Q3.jpeg' >,
       "answers": {
-        "a": "0,1",
+        "a": "0,0",
         "b": "1,1",
         "c": "1,0",
-        "d": "0,0"
+        "d": "0,1"
       },
       "explanations": {
         "a": "",
         "b": "",
         "c": "",
-        "d": ""
+        "d": "If the other input to the AND gate is 1, then when B = 0, output Y = 0; and when B = 1, Y = 1."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "advanced"
     },
     {
       "question": "The BCD code of a number is 0111 0001 1000. The Excess-3 code of this number is (assuming no stuck at faults) are",
       "answers": {
         "a": "1010 0010 1011",
-        "b": "1010 0100 1011",
-        "c": "1011 0110 1100",
+        "b": "1011 0110 1100",
+        "c": "1010 0100 1011",
         "d": "1001 0110 1100"
       },
       "explanations": {
         "a": "",
         "b": "",
-        "c": "",
+        "c": "Adding 3 (0011) to each BCD digit (0111, 0001, 1000) gives the corresponding Excess-3 code as 1010, 0100, 1011.",
         "d": ""
       },
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
@@ -79,7 +79,7 @@
       },
       "explanations": {
         "a": "",
-        "b": "",
+        "b": "Excess-3 code is self-complementing, meaning the complement of a number in Excess-3 is obtained by simply inverting the bits.",
         "c": "",
         "d": ""
       },
