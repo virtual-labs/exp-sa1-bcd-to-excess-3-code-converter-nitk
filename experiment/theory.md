@@ -386,7 +386,7 @@ There are two kinds of SAF:
               </table>
 
 </center>
-<center>Table 3 : BCD to Excess-3 Code conversion</center>
+<center>Table 3 : BCD to Excess-3 Code conversion</center></br>
 
 <p style="text-align:justify;">From the truth table above, we draw the K-Maps for each of the output variables W, X, Y and Z.</p>
 
@@ -402,5 +402,5 @@ There are two kinds of SAF:
 
 <p style="text-align:justify;">Z= ~D</p>
 
-<center><img src="images/bcd-excess3.png" ></center>
+<center><img src="images/bcd-excess3.png" width="50%"></center>
 <center>Figure 2: Logic diagram for BCD-to-excess-3 code converter</center>
