@@ -4,8 +4,7 @@
 
 <p style="text-align:justify;">BCD stands for Binary Coded Decimal. It is a method to convert decimal numbers to a binary form. In this representation, each digit in the decimal number system is represented by a fixed number of bits (usually four or eight). It is weighted in the form of 8-4-2-1. Assuming four bit representation, the BCD code for each digit as shown in Table 1.</p>
 
-<center>
-<table class="center" >
+<table>
     <tr>
       <th>Decimal</th>
       <th colspan="4">Binary (BCD)</th>
@@ -88,15 +87,14 @@
       <td>1</td>
     </tr>
   </table>
-</center>
-<center>Table 1 : Decimal to BCD conversion</center>
+
+<p>Table 1 : Decimal to BCD conversion</p>
 
 ### Excess-3 code (XS-3)
 
 <p style="text-align:justify;">The main advantage of the BCD system over regular binary code is that it is fast and efficient, as it is easier to encode and decode decimal values to BCD code. However, it occupies more memory as compared to binary code. The excess-3 code (XS-3) is a non-weighted code, used to represent decimal systems in binary forms. It is obtained by adding 011 (3) to each value in the BCD system. Assuming four-bit representation, the XS-3 code for each digit is shown in Table 2.</p>
 
-<center>
- <table style = "align-content: center; width:  100%;">
+ <table>
   <tr>
     <th>Decimal</th>
     <th colspan="4">Binary (BCD)</th>
@@ -191,9 +189,7 @@
     <td>1100</td>
   </tr>
 </table>
-
-</center>
-<center>Table 2 : Decimal to XS-3 conversion</center>
+<p>Table 2 : Decimal to XS-3 conversion</p>
 
 <p style="text-align:justify;">The most significant advantage of XS-3 code is that it is self-complementary i.e. the corresponding 9's complement in the decimal system can be obtained by interchanging the 0’s and 1's in the XS-3 code. This makes it easier to overcome the shortcomings encountered during arithmetic operations.</p>
 
@@ -216,8 +212,7 @@ There are two kinds of SAF:
 
 <p style="text-align:justify;">A BCD digit can be converted to it's corresponding Excess-3 code by simply adding 3 to it. Let A, B, C and D be the input bits and W, X, Y and Z be the output bits. Then the truth table for the conversion from BCD to Excess-3 is shown in Table 3.</p>
 
-<center>
- <table text-align="center" width="250">
+ <table  width="250">
                 <tr>
                   <th colspan="4">BCD Code (Input)</th>
                   <th colspan="4">Excess-3 Code (Output)</th>
@@ -385,8 +380,7 @@ There are two kinds of SAF:
                 </tr>  
               </table>
 
-</center>
-<center>Table 3 : BCD to Excess-3 Code conversion</center></br>
+<p>Table 3 : BCD to Excess-3 Code conversion</p></br>
 
 <p style="text-align:justify;">From the truth table above, we draw the K-Maps for each of the output variables W, X, Y and Z.</p>
 
