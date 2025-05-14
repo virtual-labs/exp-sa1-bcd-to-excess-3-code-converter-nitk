@@ -10,7 +10,7 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "",
+        "a": "BCD-to-Excess-3 conversion involves adding binary 3 to a 4-bit BCD input, which is typically done using a 4-bit parallel adder.",
         "b": "",
         "c": "",
         "d": ""
@@ -28,7 +28,7 @@
       },
       "explanations": {
         "a": "",
-        "b": "",
+        "b": "Each of the k lines can have two stuck-at faults (stuck-at-0 and stuck-at-1), resulting in a total of 2k possible single stuck-at faults.",
         "c": "",
         "d": ""
       },
@@ -46,7 +46,7 @@
       "explanations": {
         "a": "",
         "b": "",
-        "c": "",
+        "c": "Stuck-open faults occur due to incomplete source-drain contact or large separation of diffusion regions from the gate, both leading to circuit disconnection.",
         "d": ""
       },
       "correctAnswer": "c",
@@ -56,17 +56,17 @@
       "question": "BCD code uses how many bits per number ?",
       "answers": {
         "a": "2",
-        "b": "3",
-        "c": "4",
+        "b": "4",
+        "c": "3",
         "d": "8"
       },
       "explanations": {
         "a": "",
-        "b": "",
+        "b": "BCD (Binary-Coded Decimal) represents each decimal digit (0–9) using a 4-bit binary code.",
         "c": "",
         "d": ""
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
@@ -74,16 +74,16 @@
       "answers": {
         "a": "0011 0111 and 0101 1010",
         "b": "0010 0110 and 0110 1010",
-        "c": "0010 0111 and 0101 1010",
-        "d": "0010 0111 and 0101 1100"
+        "c": "0010 0111 and 0101 1100",
+        "d": "0010 0111 and 0101 1010"
       },
       "explanations": {
         "a": "",
         "b": "",
         "c": "",
-        "d": ""
+        "d": "BCD for 2 and 7 is 0010 0111; adding 3 (0011) to each digit gives Excess-3 as 0101 1010."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "d",
       "difficulty": "advanced"
     }
   ]
