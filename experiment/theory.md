@@ -390,7 +390,7 @@ There are two kinds of SAF:
 
 <p style="text-align:justify;">From the truth table above, we draw the K-Maps for each of the output variables W, X, Y and Z.</p>
 
-<center><img src="images/kmp.png" ></center></br>
+<center><img src="images/kmp.png" width="60%"></center></br>
 
 <p style="text-align:justify;">The minimized expressions for the outputs are:</p>
 
