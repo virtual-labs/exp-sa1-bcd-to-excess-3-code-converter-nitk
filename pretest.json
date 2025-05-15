@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "BCD-to-Excess-3 Code Conversion is a example of a _____________.",
+      "answers": {
+        "a": "4-bit Parallel Adder",
+        "b": "Sum-of-Products",
+        "c": "2- bit Parallel Adder",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "BCD-to-Excess-3 conversion involves adding binary 3 to a 4-bit BCD input, which is typically done using a 4-bit parallel adder.",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "For a circuit with k lines _____________ single stuck-at fault is possible.",
+      "answers": {
+        "a": "k",
+        "b": "2k",
+        "c": "k/2",
+        "d": "k2 single stuck-at fault is possible"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Each of the k lines can have two stuck-at faults (stuck-at-0 and stuck-at-1), resulting in a total of 2k possible single stuck-at faults.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Stuck open (off) fault occur/s due to _____________.",
+      "answers": {
+        "a": "An incomplete contact (open) of source to drain node",
+        "b": "Large separation of drain or source diffusion from the gate",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "Stuck-open faults occur due to incomplete source-drain contact or large separation of diffusion regions from the gate, both leading to circuit disconnection.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "BCD code uses how many bits per number ?",
+      "answers": {
+        "a": "2",
+        "b": "4",
+        "c": "3",
+        "d": "8"
+      },
+      "explanations": {
+        "a": "",
+        "b": "BCD (Binary-Coded Decimal) represents each decimal digit (0–9) using a 4-bit binary code.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The BCD and Excess-3 code equivalent for the number 27 is _____________.",
+      "answers": {
+        "a": "0011 0111 and 0101 1010",
+        "b": "0010 0110 and 0110 1010",
+        "c": "0010 0111 and 0101 1100",
+        "d": "0010 0111 and 0101 1010"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "BCD for 2 and 7 is 0010 0111; adding 3 (0011) to each digit gives Excess-3 as 0101 1010."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    }
+  ]
+}
