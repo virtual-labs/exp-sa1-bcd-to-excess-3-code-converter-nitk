@@ -36,7 +36,7 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "The output ‘Y’ of the following AND gate when B is 0 and 1 are respectively <img src='../images/Pre_Q3.jpeg' />",
+      "question": "The output ‘Y’ of the following AND gate when B is 0 and 1 are respectively <img src='./images/Pre_Q3.jpeg' />",
       "answers": {
         "a": "0,0",
         "b": "1,1",
