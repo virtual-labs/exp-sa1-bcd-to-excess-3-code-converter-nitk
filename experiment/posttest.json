@@ -36,20 +36,20 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "The output ‘Y’ of the following AND gate when B is 0 and 1 are respectively <img src='./images/Pre_Q3.jpeg' />",
+      "question": "Which of the following is the correct BCD Excess-3 code for the decimal number 7?",
       "answers": {
-        "a": "0,0",
-        "b": "1,1",
-        "c": "1,0",
-        "d": "0,1"
+        "a": "0111",
+        "b": "1011",
+        "c": "1010",
+        "d": "1110"
       },
       "explanations": {
         "a": "",
         "b": "",
-        "c": "",
-        "d": "If the other input to the AND gate is 1, then when B = 0, output Y = 0; and when B = 1, Y = 1."
+        "c": "In BCD Excess-3, 3 is added to the standard BCD code. For decimal 7 (BCD: 0111), adding 3 (0011) gives 1010, the correct Excess-3 code.",
+        "d": ""
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "advanced"
     },
     {
