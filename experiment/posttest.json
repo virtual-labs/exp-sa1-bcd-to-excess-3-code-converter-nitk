@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Minimum number of AND, OR and NOT gates required in a 4- bit BCD to Excess-3 converter circuit is _____________.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "4,4,3",
+        "b": "5,5,4",
+        "c": "5,2,2",
+        "d": "4,5,3"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The minimized logic implementation of a 4-bit BCD to Excess-3 converter typically requires 4 AND gates, 4 OR gates, and 3 NOT gates.",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Stuck-at-1-fault (SAF) occurs when",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A line is permanently stuck to ground.",
+        "b": "A line is permanently stuck to Vdd.",
+        "c": "A line is permanently stuck to another line.",
+        "d": "All of the above."
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "A stuck-at-1 fault means the line is always at logic high (1), which corresponds to being permanently connected to Vdd.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is the correct BCD Excess-3 code for the decimal number 7?",
+      "answers": {
+        "a": "0111",
+        "b": "1011",
+        "c": "1010",
+        "d": "1110"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "In BCD Excess-3, 3 is added to the standard BCD code. For decimal 7 (BCD: 0111), adding 3 (0011) gives 1010, the correct Excess-3 code.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The BCD code of a number is 0111 0001 1000. The Excess-3 code of this number is (assuming no stuck at faults) are",
+      "answers": {
+        "a": "1010 0010 1011",
+        "b": "1011 0110 1100",
+        "c": "1010 0100 1011",
+        "d": "1001 0110 1100"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "Adding 3 (0011) to each BCD digit (0111, 0001, 1000) gives the corresponding Excess-3 code as 1010, 0100, 1011.",
+        "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "The advantage of Excess-3 code over BCD code is that",
+      "answers": {
+        "a": "Excess 3 code occupies lesser memory.",
+        "b": "Excess 3 code is a self-complementing code.",
+        "c": "Both of the above.",
+        "d": "None of the above."
+      },
+      "explanations": {
+        "a": "",
+        "b": "Excess-3 code is self-complementing, meaning the complement of a number in Excess-3 is obtained by simply inverting the bits.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
